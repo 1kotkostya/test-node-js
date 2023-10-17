@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h2>This is new form for request</h2>
+<div id="container">
+    <form
+ role="form"
+ id="newsForm"
+ >
+ <input type="hidden" name="_csrf" value="{{ csrf }}">
+ <label for="fieldname">Name</label>
+ <input type="text" id="fieldname" name="name">
+<label for="fieldemail">Email</label>
+ <input type="email" id="fieldemail" name="email">
+ <button type="submit">Login in</button>
+ </form>
+</div>
+    <script>
+        console.log('dasdasdasd')
+        const a = document.getElementById('newsForm');
+        console.log(a, 'form')
+        a.addEventListener('submit', (ev) => {
+            console.log(ev, 'sadasd')
+             ev.preventDefault,
+            let forms = ev.target;
+           console.log(forms, 'forms')
+    
+        })
+    </script>
+</body>
+</html>

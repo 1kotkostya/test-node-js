@@ -1,0 +1,12 @@
+<h1>tours</h1>
+{{#each vacations}}
+    <div>
+        <h3>{{name}}</h3>
+        <span>{{description}}</span>
+        {{#if isSeason}}
+         <span>{{price}}</span>
+        {{else}} <span>sorry</span>
+        {{/if}}
+    </div>
+
+    {{/each}}
